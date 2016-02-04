@@ -4,13 +4,18 @@ tr{
 
 td{
     width:100px;
-    height:20px;
+    height:35px;
     text-align:center;
     overflow: hidden;
+    position: relative;
 }
 
 td img{
-    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px -2px 2px #006400;
 }
 
 .title{
@@ -22,3 +27,10 @@ td img{
     background-color:#F0F0F0;
 }
 
+.frontCard {
+    position: static;
+}
+
+.frontCard img {
+    position: static;
+}
