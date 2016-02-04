@@ -104,25 +104,25 @@ $( '.columnOfCards .cardLocation' ).html("");
 
     $.each(game.cols[0], function( key, val ) {
         $( '#c0 td' ).removeClass("frontCard");
-        $( '#c0 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
+        $( '#c0 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  " onclick=\"removeCard(0)\">");
         $( '#c0 .l'+key ).addClass("frontCard");
     });
 
      $.each(game.cols[1], function( key, val ) {
         $( '#c1 td' ).removeClass("frontCard");
-        $( '#c1 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
+        $( '#c1 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  " onclick=\"removeCard(1)\">");
         $( '#c1 .l'+key ).addClass("frontCard");
     });
 
      $.each(game.cols[2], function( key, val ) {
         $( '#c2 td' ).removeClass("frontCard");
-        $( '#c2 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
+        $( '#c2 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  " onclick=\"removeCard(2)\">");
         $( '#c2 .l'+key ).addClass("frontCard");
     });
 
  $.each(game.cols[3], function( key, val ) {
         $( '#c3 td' ).removeClass("frontCard");
-        $( '#c3 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
+        $( '#c3 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  " onclick=\"removeCard(3)\">");
         $( '#c3 .l'+key ).addClass("frontCard");
     });
 
