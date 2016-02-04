@@ -6,13 +6,50 @@ td{
 width:100px;
 height:20px;
 text-align:center;
+color: white;
 }
 
 .title{
 font-weight: bold;
+float: right;
 }
 
 .cardLocation{
 width: 100px;
 background-color:#F0F0F0;
 }
+
+body {
+background-image: url(/assets/cards/background.jpg);
+}
+
+.header {
+text-align: center;
+border-style: solid;
+color: white;
+}
+
+#dealButton{
+background-image:url('/assets/cards/backofdeck.jpg');
+  width:250px; /* or whatever */
+  height:350px; /* or whatever */
+}
+.cardPlacement {
+width: 50%;
+}
+
+table {
+float: right;
+padding-right: 50px;
+}
+
+td {
+width: 25%;
+}
+
+
+td img {
+width: 100%;
+height: auto;
+}
+
