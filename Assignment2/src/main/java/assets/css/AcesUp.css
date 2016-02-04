@@ -30,9 +30,7 @@ color: white;
 }
 
 #dealButton{
-background-image:url('/assets/cards/backofdeck.jpg');
-  width:250px; /* or whatever */
-  height:350px; /* or whatever */
+
 }
 .cardPlacement {
 width: 50%;
