@@ -103,19 +103,19 @@ console.log(game);
 $( '.columnOfCards .cardLocation' ).html("");
 
     $.each(game.cols[0], function( key, val ) {
-        $( '#c0 .l'+key ).html(val.value + val.suit);
+        $( '#c0 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
     });
 
  $.each(game.cols[1], function( key, val ) {
-        $( '#c1 .l'+key ).html(val.value + val.suit);
+        $( '#c1 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
     });
 
  $.each(game.cols[2], function( key, val ) {
-        $( '#c2 .l'+key ).html(val.value + val.suit);
+        $( '#c2 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
     });
 
  $.each(game.cols[3], function( key, val ) {
-        $( '#c3 .l'+key ).html(val.value + val.suit);
+        $( '#c3 .l'+key ).html("<img src='/assets/cards/" + val.value + "_of_" + val.suit + ".png'" +  ">");
     });
 
 
