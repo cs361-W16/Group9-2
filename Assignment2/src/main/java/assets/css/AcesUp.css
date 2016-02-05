@@ -30,7 +30,12 @@ color: white;
 }
 
 #dealButton{
+float: right;
+margin-right: 100px;
 
+#from_col {
+color: white;
+}
 }
 .cardPlacement {
 width: 50%;
@@ -38,7 +43,7 @@ width: 50%;
 
 table {
 float: right;
-padding-right: 50px;
+padding-right: 100px;
 }
 
 td {
@@ -49,5 +54,6 @@ width: 25%;
 td img {
 width: 100%;
 height: auto;
+position: static;
 }
 
