@@ -19,6 +19,26 @@ td img{
 }
 
 .title{
+<<<<<<< HEAD
+font-weight: bold;
+/*float: right;*/
+}
+
+.cardLocation{
+width: 100px;
+background-color:#F0F0F0;
+}
+
+body {
+background-color: green;
+}
+
+.header {
+text-align: center;
+border-style: solid;
+}
+
+=======
     font-weight: bold;
 }
 
@@ -34,3 +54,4 @@ td img{
 .frontCard img {
     position: static;
 }
+>>>>>>> e5ab83d728a5ef1e77e4de420b1a7a918386e692

@@ -1,36 +1,53 @@
 tr{
-    max-width:500px;
+width:500px;
 }
 
 td{
-    width:100px;
-    height:35px;
-    text-align:center;
-    overflow: hidden;
-    position: relative;
-}
-
-td img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0px -2px 2px #006400;
+width:100px;
+height:20px;
+text-align:center;
+color: white;
 }
 
 .title{
-    font-weight: bold;
+font-weight: bold;
+float: right;
 }
 
 .cardLocation{
-    width: 100px;
-    background-color:#F0F0F0;
+width: 100px;
+background-color:#F0F0F0;
 }
 
-.frontCard {
-    position: static;
+body {
+background-image: url(/assets/cards/background.jpg);
 }
 
-.frontCard img {
-    position: static;
+.header {
+text-align: center;
+border-style: solid;
+color: white;
 }
+
+#dealButton{
+
+}
+.cardPlacement {
+width: 50%;
+}
+
+table {
+float: right;
+padding-right: 50px;
+}
+
+td {
+width: 25%;
+}
+
+
+td img {
+width: 100%;
+height: auto;
+}
+
