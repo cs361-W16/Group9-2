@@ -1,9 +1,11 @@
-<h1 class="header">Aces Up</h1>
-
 <link href="/assets/css/AcesUp.css" rel="stylesheet">
 <script type="text/javascript" src="/assets/webjars/jquery/2.1.3/jquery.js"></script>
 
-<body>
+
+<header>
+    <img id="logo" src="/assets/cards/headImage.jpg" width="300px" height="300px" alt="4 Ace's">
+    <h1 class="header">Aces Up</h1>
+</header>
 
 <table>
     <!--<tr class="title">
@@ -87,12 +89,27 @@
         </td>
     </tr>
 </table>
+<div class="wrapper">
+    <div id="div1" class="div1">
+    <button type="button" id="dealButton" class="deckButton">
+        <img src="/assets/cards/backofdeck.jpg" width="200" height="300" alt="Draw">
+    </button>
+    </div>
 
-<button id="dealButton"><img src="/assets/cards/backofdeck.jpg"></button>
-<BR>Remove from: <button id="Remove1">Column1</button><button id="Remove2">Column2</button><button id="Remove3">Column3</button><button id="Remove4">Column4</button>
+    <div id="div2" class="div2">
+    <!--Remove from: <button id="Remove1">Column1</button>
+    <button id="Remove2">Column2</button>
+    <button id="Remove3">Column3</button>
+    <button id="Remove4">Column4</button>
+    -->
+    <BR>
 
-<BR>Move from column <input type="text" id="from_col"  /> to <input type="text" id="to_col"  /> <button id="moveButton">Move</button>
-
+    <p id="swapThese">Move from column <input type="text" id="from_col" size="1"  />
+    to <input type="text" id="to_col" size="1" />
+    &nbsp <button id="moveButton">Move</button></p><br>
+    <p id="swapThese">Note: Columns are numbered 0 to 3</p>
+    </div>
+</div>
 <script>
 
 var game;
