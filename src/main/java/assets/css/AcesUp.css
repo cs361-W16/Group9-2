@@ -1,0 +1,101 @@
+html *
+{
+   font-size: 35px !important;
+   font-family: Arial !important;
+}
+
+tr{
+width:500px;
+}
+
+td{
+width:100px;
+height:20px;
+text-align:center;
+color: white;
+}
+
+.title{
+font-weight: bold;
+float: right;
+}
+
+.cardLocation{
+width: 100px;
+background-color:#F0F0F0;
+}
+
+body {
+background-image: url(/assets/cards/background.jpg);
+}
+
+header {
+color: white;
+border-style: solid;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width:100%;
+}
+#logo {
+    float:right;
+    margin-left:-100%;
+}
+#swapThese {
+color: white;
+}
+.cardPlacement {
+width: 50%;
+}
+
+table {
+padding-top: 10px;
+float: right;
+padding-right: 100px;
+}
+
+td {
+width: 25%;
+}
+
+td img {
+width: 100%;
+height: auto;
+position: static;
+}
+
+.wrapper {
+
+    height: 100%;
+    width: 100%;
+}
+
+.div1 {
+
+	margin: 0px auto;
+    margin-top: 10px;
+	overflow: hidden;
+	padding-top: 10px;
+	width: 50%;
+	height: 65%;
+	min-width: 100px;
+	min-height: 200px;
+	max-width: 200px;
+	max-height: 300px;
+
+	border: 1px solid #000000;
+	margin: 0 auto;
+}
+
+.deckButton {
+position: relative;}
+
+.div2 {
+	overflow: hidden;
+    margin-left: -20%;
+	padding: 0px;
+	margin: 0 auto;
+	visibility: visible;
+	padding-left: 200px;
+}
