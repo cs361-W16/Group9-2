@@ -8,15 +8,19 @@
 </header>
 
 <div id="select">
-    <span onclick="english()">English</span>
-    <br>
-    <span onclick="spanish();changeDeck();">Spanish</span>
+    <p>What version of the game do you want to play:</p>
+    <button class="englishGame" onclick="english();EchangeDeck();">English</button>
+    <br><br>
+    <button class="spanishGame" onclick="spanish();SchangeDeck();">Spanish</button>
 </div>
 
 <!-- Script to change deck image depending on the game the user wants to play -->
 <script language="javascript">
-    function changeDeck() {
+    function SchangeDeck() {
         document.getElementById("deckImage").src="/assets/cards/spanishbackofdeck.jpg";
+    }
+    function EchangeDeck() {
+        document.getElementById("deckImage").src="/assets/cards/backofdeck.jpg";
     }
 </script>
 
@@ -101,7 +105,7 @@
     <div id="div1" class="div1">
 
     <button type="button" id="dealButton" class="deckButton">
-        <img src="/assets/cards/backofdeck.jpg" alt="Deck" width="200" height="300" id="deckImage"/>
+        <img src="/assets/cards/pickgame.png" alt="Deck" width="200" height="300" id="deckImage"/>
     </button>
     </div>
 
