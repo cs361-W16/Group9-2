@@ -21,8 +21,8 @@ public class testCard {
     }
 
     @Test
-    public void testMoveCard(){
-        Game g = new Game();
+    public void testMoveCardEng(){
+        Game g = new EngGame();
         g.buildDeck();
         g.customDeal(0,3,6,9);
         g.remove(2);
@@ -30,6 +30,18 @@ public class testCard {
         g.move(0,2);
         assertEquals(1,g.cols.get(2).size());
         assertEquals(0,g.cols.get(0).size());
+    }
+
+    @Test
+    public void testMoveCardSpan(){
+        Game g = new SpanGame();
+        g.buildDeck();
+        g.customDeal(0, 3, 6, 9);
+        g.remove(2);
+        assertEquals(0, g.cols.get(2).size());
+        g.move(0, 2);
+        assertEquals(1, g.cols.get(2).size());
+        assertEquals(0, g.cols.get(0).size());
     }
 
 
