@@ -7,6 +7,8 @@
     <h1 class="header">Aces Up</h1>
 </header>
 
+<div id="select" style="width:800px; top:100px; left:200px; position:absolute; color:#fff; background-color:#6c6; padding: 10px;"><span onclick="english()">English</span> <br> <span onclick="spanish()">Spanish</span></div>
+
 <table>
     <!--<tr class="title">
         <td >Column0</td>
@@ -147,10 +149,29 @@ $( '.columnOfCards .cardLocation' ).html("");
 
 }
 
+/*
 $.getJSON("http://localhost:8080/game", function( data ) {
 display(data);
 game = data;
 });
+*/
+
+function english(){
+    $.getJSON("http://localhost:8080/game", function( data ) {
+    display(data);
+    game = data;
+    });
+    document.getElementById("select").style.display = 'none';
+}
+
+function spanish(){
+    $.getJSON("http://localhost:8080/gameSpanish", function( data ) {
+    display(data);
+    game = data;
+    });
+    document.getElementById("select").style.display = 'none';
+}
+
 
 
 $("#dealButton").click(function(){
