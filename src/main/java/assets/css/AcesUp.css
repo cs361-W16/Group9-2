@@ -38,13 +38,16 @@ margin-right: auto;
 text-align: center;
 width:100%;
 }
+
 #logo {
     float:right;
     margin-left:-100%;
 }
+
 #swapThese {
 color: white;
 }
+
 .cardPlacement {
 width: 50%;
 }
@@ -98,4 +101,15 @@ position: relative;}
 	margin: 0 auto;
 	visibility: visible;
 	padding-left: 200px;
+}
+
+#select {
+    width:500px;
+    top:100px;
+    left:200px;
+    margin-left: -100px;
+    position:absolute;
+    color:#fff;
+    background-color:#6c6;
+    padding: 10px;
 }
