@@ -16,7 +16,9 @@
 
 package controllers;
 
+import models.EngGame;
 import models.Game;
+import models.SpanGame;
 import ninja.Context;
 import ninja.Result;
 import ninja.Results;
@@ -37,7 +39,7 @@ public class ApplicationController {
     }
     
     public Result gameGet(){
-        Game g = new Game();
+        Game g = new EngGame();
         g.buildDeck();
         g.shuffle();
         g.dealFour();
@@ -46,29 +48,46 @@ public class ApplicationController {
     }
 
     public Result gameGetSpanish(){
-        Game g = new Game();
-        g.buildDeckSpanish();
+        Game g = new SpanGame();
+        g.buildDeck();
         g.shuffle();
         g.dealFour();
 
         return Results.json().render(g);
     }
 
-    public Result dealPost(Context context, Game g) {
+    public Result dealPost(Context context, EngGame g) {
         if(context.getRequestPath().contains("deal")){
             g.dealFour();
         }
         return Results.json().render(g);
     }
 
-    public Result removeCard(Context context, @PathParam("column") int colNumber, Game g){
+    public Result dealPostSpanish(Context context, SpanGame g) {
+        if(context.getRequestPath().contains("deal")){
+            g.dealFour();
+        }
+        return Results.json().render(g);
+    }
+
+    public Result removeCard(Context context, @PathParam("column") int colNumber, EngGame g){
         g.remove(colNumber);
         return  Results.json().render(g);
     }
 
-    public Result moveCard(Context context, @PathParam("columnFrom") int colFrom, @PathParam("columnTo") int colTo, Game g){
+    public Result removeCardSpanish(Context context, @PathParam("column") int colNumber, SpanGame g){
+        g.remove(colNumber);
+        return Results.json().render(g);
+    }
+
+    public Result moveCard(Context context, @PathParam("columnFrom") int colFrom, @PathParam("columnTo") int colTo, EngGame g){
         g.move(colFrom,colTo);
         return  Results.json().render(g);
+    }
+
+    public Result moveCardSpanish(Context context, @PathParam("columnFrom") int colFrom, @PathParam("columnTo") int colTo, SpanGame g){
+        g.move(colFrom, colTo);
+        return Results.json().render(g);
     }
 
 }

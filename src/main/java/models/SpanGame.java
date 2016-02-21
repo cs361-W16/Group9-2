@@ -17,7 +17,7 @@ public class SpanGame extends Game {
     }
 
     public void buildDeck(){
-        for(int i = 1; i < 11; i++){
+        for(int i = 1; i < 13; i++){
             deck.add(new Card(i, Suit.Bastos));
             deck.add(new Card(i, Suit.Oros));
             deck.add(new Card(i, Suit.Copas));
