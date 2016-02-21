@@ -7,16 +7,24 @@
     <h1 class="header">Aces Up</h1>
 </header>
 
-<div id="select" style="width:800px; top:100px; left:200px; position:absolute; color:#fff; background-color:#6c6; padding: 10px;"><span onclick="english()">English</span> <br> <span onclick="spanish()">Spanish</span></div>
+<div id="select">
+    <p>What version of the game do you want to play:</p>
+    <button class="englishGame" onclick="english();EchangeDeck();">English</button>
+    <br><br>
+    <button class="spanishGame" onclick="spanish();SchangeDeck();">Spanish</button>
+</div>
+
+<!-- Script to change deck image depending on the game the user wants to play -->
+<script language="javascript">
+    function SchangeDeck() {
+        document.getElementById("deckImage").src="/assets/cards/spanishbackofdeck.jpg";
+    }
+    function EchangeDeck() {
+        document.getElementById("deckImage").src="/assets/cards/backofdeck.jpg";
+    }
+</script>
 
 <table>
-    <!--<tr class="title">
-        <td >Column0</td>
-        <td >Column1</td>
-        <td >Column2</td>
-        <td >Column3</td>
-    </tr>
-    -->
     <tr><td class="columnOfCards" id="c0">
         <table>
             <tr><td class="cardLocation l0"></td></tr>
@@ -91,19 +99,18 @@
         </td>
     </tr>
 </table>
+
+<!-- Deck Button and it's image -->
 <div class="wrapper">
     <div id="div1" class="div1">
+
     <button type="button" id="dealButton" class="deckButton">
-        <img src="/assets/cards/backofdeck.jpg" width="200" height="300" alt="Draw">
+        <img src="/assets/cards/pickgame.png" alt="Deck" width="200" height="300" id="deckImage"/>
     </button>
     </div>
 
     <div id="div2" class="div2">
-    <!--Remove from: <button id="Remove1">Column1</button>
-    <button id="Remove2">Column2</button>
-    <button id="Remove3">Column3</button>
-    <button id="Remove4">Column4</button>
-    -->
+
     <BR>
 
     <p id="swapThese">Move from column <input type="text" id="from_col" size="1"  />

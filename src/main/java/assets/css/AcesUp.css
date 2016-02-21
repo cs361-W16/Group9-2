@@ -1,6 +1,5 @@
 html *
 {
-   font-size: 35px !important;
    font-family: Arial !important;
 }
 
@@ -38,13 +37,16 @@ margin-right: auto;
 text-align: center;
 width:100%;
 }
+
 #logo {
     float:right;
     margin-left:-100%;
 }
+
 #swapThese {
 color: white;
 }
+
 .cardPlacement {
 width: 50%;
 }
@@ -88,9 +90,6 @@ position: static;
 	margin: 0 auto;
 }
 
-.deckButton {
-position: relative;}
-
 .div2 {
 	overflow: hidden;
     margin-left: -20%;
@@ -98,4 +97,33 @@ position: relative;}
 	margin: 0 auto;
 	visibility: visible;
 	padding-left: 200px;
+}
+
+#select {
+    width:200px;
+    top:100px;
+    left:200px;
+    margin-top: 10px;
+    margin-left: -100px;
+    position:absolute;
+    color:#fff;
+    background-color:#3366ff;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.englishGame {
+    border-style: solid;
+}
+
+.englishGame:hover {
+    background-color: red;
+}
+
+.spanishGame {
+    border-style: solid;
+}
+
+.spanishGame:hover {
+    background-color: yellow;
 }
